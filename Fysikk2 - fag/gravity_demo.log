@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.6)  10 MAR 2026 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.6)  10 MAR 2026 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,13 +898,13 @@ Package pdftex.def Info: ./assets/Greek_alphabet.png  used on input line 260.
 (pdftex.def)             Requested size: 276.00105pt x 155.22308pt.
  [6]
 LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-276.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 276.
+283.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 283.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 276.
+(Font)              for symbol `textbraceleft' on input line 283.
 
 [7 <./assets/Greek_alphabet.png>] [8] (gravity_demo.aux)
  ***********
@@ -917,10 +917,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19703 strings out of 474485
- 436948 string characters out of 5743263
+ 19705 strings out of 474485
+ 436984 string characters out of 5743263
  1944542 words of memory out of 5000000
- 41536 multiletter control sequences out of 15000+600000
+ 41538 multiletter control sequences out of 15000+600000
  570058 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,11n,95p,1182b,995s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -950,7 +950,7 @@ blic/amsfonts/cm/cmti9.pfb><C:/Users/martin/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/martin/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/martin/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on gravity_demo.pdf (8 pages, 3631087 bytes).
+Output written on gravity_demo.pdf (8 pages, 3632665 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

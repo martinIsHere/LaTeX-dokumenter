@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1773167416.29229 "./gravity_demo.tex" "gravity_demo.pdf" "gravity_demo" 1773167418.89654 0
-  "./gravity_demo.tex" 1773167412 11942 ac945e6b41af3b1a57761750ef3a450d ""
-  "C:/Users/martin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773158677 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1773181079.25917 "./gravity_demo.tex" "gravity_demo.pdf" "gravity_demo" 1773181081.99888 0
+  "./gravity_demo.tex" 1773181075 12581 98b996b6d62a16948f2b5dd131c23b74 ""
+  "C:/Users/martin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773180601 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/martin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1746550982 24225558 b289cfd2f1f1224ca1452351fc6d8aea ""
   "C:/Users/martin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/martin/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -218,8 +218,8 @@
   "assets/ARTSTYLE.png" 1725119140 3101103 8948a106027b460f4ce71a2606eebc5a ""
   "assets/Greek_alphabet.png" 1773156305 128904 797b73c4a64d3b422172e3b9fc349095 ""
   "assets/update_acceleration_CODE.png" 1760024582 30477 facf24cc73a3231e78ce0c9db42d779d ""
-  "gravity_demo.aux" 1773167418 2759 c3bc5d579b8408db616ac9a5ee1fe7b0 "pdflatex"
-  "gravity_demo.tex" 1773167412 11942 ac945e6b41af3b1a57761750ef3a450d ""
+  "gravity_demo.aux" 1773181081 3057 0d39bc7f7f8b96698f1ddb6a37ce0b15 "pdflatex"
+  "gravity_demo.tex" 1773181075 12581 98b996b6d62a16948f2b5dd131c23b74 ""
   (generated)
   "gravity_demo.aux"
   "gravity_demo.log"
