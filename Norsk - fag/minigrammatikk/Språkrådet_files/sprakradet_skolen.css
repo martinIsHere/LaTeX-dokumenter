@@ -1,0 +1,20 @@
+/************************************************************************************
+* Styling for student exercise room
+*************************************************************************************/
+
+/*
+	Intended primarily for color computer screens and wider than 650
+*/
+@media screen and (min-width: 650px) {
+	html {
+/*
+		background-image: url("../gfx/skolen_bg.jpg") !important;
+		background-repeat: no-repeat;
+		background-position: center center;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+*/
+	}
+}

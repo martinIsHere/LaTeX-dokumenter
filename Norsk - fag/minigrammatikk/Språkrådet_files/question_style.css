@@ -1,0 +1,45 @@
+﻿
+body, table, input {
+    font-size:15px;
+
+}
+
+.itemTitle, .itemTitle a, .questionTitle {
+	font-size:18px;
+    font-weight: bold;
+
+}
+
+.itemTitle a.grammarLink {
+    font-weight:normal;
+    font-size:13px;
+    text-decoration:underline;
+    padding: 0 10px;
+}
+
+.button input, .buttons input, #idPanelConfirmation input {
+
+}
+
+
+.item .showSolutionLinks a div{
+    padding: 3px;
+     /*
+    color:#214669;
+    font-size:13px;
+    font-weight:bold;
+    text-decoration:none;
+       */
+}
+
+.wrong {
+    font-weight: bold;
+}
+
+.correct {
+    font-weight: bold;
+}
+
+.noanswer{
+	color: #ff4d46;
+}

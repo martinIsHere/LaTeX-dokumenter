@@ -1,0 +1,904 @@
+/*
+	$Id$
+*/
+
+/*CSS - margin, padding, positioning....fonts and colors can be found in assessment_style.css */
+
+/*################################################*/
+/*## Here you will find:													*/
+/*##  - General stuff															*/
+/*## 	- Topsection																*/
+/*## 	- Bottomsection															*/	
+/*##  - Confirmpage																*/
+/*##  - Summarypage																*/
+/*##  - Hints and suggested solutions							*/
+/*##  - Popups																		*/
+/*##  - Waitmessages															*/
+/*################################################*/
+
+
+
+/*################## General #############################*/
+form {
+	margin:0px;
+	padding:0px;
+}
+
+
+.debug {
+	display:none;
+}
+
+body#assessment {
+	text-align:center;
+	position:relative;
+}
+
+.assessmentDiv {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	width:900px;
+	overflow:hidden;
+	text-align:left;
+	padding:20px;
+	position:relative;
+}
+
+* html .assessmentDiv {
+	width:940px;
+}
+
+.itemContent {
+	padding-top:20px;
+}
+
+.loading {
+	float:left;
+    height:385px;
+    /*width:900px;*/
+    background-image:url("../../gfx/wait.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.loading .error{
+display:none;
+}
+
+.failed{
+    float:left;
+    height:385px;
+    width:900px;
+    font-weight:bold;
+}
+
+.panelStart iframe {
+	margin-left:12px;
+	width:880px;
+	height:300px;
+}
+
+.panelStart .frontpageIframeWrapper {
+    padding-bottom:10px;
+}
+
+.panelStart iframe.exploramazeFrontpage {
+    height:590px;
+    width:880px;
+}
+
+* html .panelStart iframe {
+	margin-left:0px;
+}
+
+
+#tempScoreDiv {
+   display:none;
+}
+
+/*End of general*/
+
+
+/*################## Topsection #############################*/
+.topSection {
+	position:relative;
+	height:82px;
+	width:900px;
+}
+
+.topSection #assessmentName {
+	position:absolute;
+	bottom:10px;
+	left:20px;
+}
+
+.topSection #assessmentLanguage {
+	position:absolute;
+	top:20px;
+	right:5px;
+}
+
+.ttsContainer {
+	position: absolute;
+	right: 10px;
+	top: -1px;
+	
+}
+
+#idTTSWrapper {
+	bottom:0;
+	float:right;
+	height:31px;
+	width:39px;
+	left:0;
+	margin:10px 10px 0 0;
+	padding:0;
+	position:relative;
+	right:0;
+
+}
+/*End of topsection*/
+
+/*########################### BottomSection #############################*/
+
+.bottomSection {
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	margin-top:10px;
+	margin-bottom:6px;
+}
+
+.buttons .button {
+	display:inline;
+}
+
+.sectionNavigationComponents .assess_btnPrev, .sectionNavigationComponents .assess_btnAnswer, .sectionNavigationComponents .assess_btnNext, .sectionNavigationComponents .assess_btnRetry, .sectionNavigationComponents .assess_answer  {
+	width:145px;
+	height:27px;
+}
+
+.sectionNavigationComponents .assess_btnAnswer, .sectionNavigationComponents .assess_btnRetry, .sectionNavigationComponents .assess_answer  {
+	margin-right:10px;
+}
+
+.sectionNavigationComponents .assess_btnPrev {
+   padding-right:10px;
+}
+
+.sectionNavigationComponents .assess_btnNext {
+	padding-left:10px;
+}
+
+.sectionNavigationComponents input[disabled]  {
+	}
+
+.forPreviewOnly #doneBtn{
+   display:none;
+}
+
+/*Linjen med knapper for frem, tilbake og svarknapper*/
+.sectionNavigationComponents {
+	float:left;
+	width:100%;
+	text-align:right;
+}
+
+
+/*Section and questionnavigation*/
+
+/*Hele boksen. Seksjonsnavnene og oppgavene*/
+#qti_assessmentTrackDiv {
+	margin-top:15px;
+	float:left;
+	position:relative;
+}
+
+#qti_assessmentTrackDiv td{
+	text-align:left;
+	width:auto;
+	margin:4px;
+}
+
+#qti_assessmentTrackDiv td {
+	overflow:hidden;
+}
+
+#qti_assessmentTrackDiv td a{
+	text-align:center;
+	text-decoration:none;
+	cursor:default;
+}
+
+#qti_assessmentTrackDiv .hideTitle {
+	display:none;
+}
+
+#qti_assessmentTrackDiv .wrapper .questionSelector div.showAlways{
+	display:block;
+}
+
+#qti_assessmentTrackDiv .wrapper .questionSelector div.showTitle2{
+	display:block;
+}
+
+#qti_assessmentTrackDiv .showAlways a {
+}
+
+.sectionMenuItem {
+	float:left;
+}
+
+#navigationTable {
+	table-layout: fixed;
+	width:900px;
+}
+
+.questionRow td {
+	height:10px;
+	font-size:1px;
+	overflow:hidden;
+	text-align:left;
+}
+
+* html .questionRow td {
+	height:15px;
+}
+
+.sectionRow td {
+	height:3px;
+	font-size:1px;
+	overflow:hidden;
+	border-top:#fff solid 2px;
+}
+
+* html .sectionRow td {
+	height:5px;
+}
+
+.wrapper {
+	text-align:left;
+}
+
+* html .wrapper a {
+	width:100%;
+}
+
+.questionRow a>.wrapper{
+	cursor: pointer
+}
+
+.questionRow .wrapper .questionSelector{
+	position:absolute;
+	top:-7px;
+	font-size:10px;	
+}
+
+.questionRow a:hover .wrapper .questionSelector div {
+	display:block;
+}
+
+.sectionRow .wrapper .questionSelector {
+	position:absolute;
+	bottom:-14px;
+	font-size:10px;
+}
+
+
+
+.current .wrapper .questionSelector div{
+	display:block;
+}
+
+.showAlways .wrapper .questionSelector div{
+	display:block;
+}
+
+.wrapper .questionSelector div{
+	display:none;
+}
+
+.wrapper .questionSelector div.showCurrentTitle {
+	display:block;
+}
+
+.wrapper .questionSelector div.showCurrentTitle a{
+	font-size:12px;
+	font-weight:bold;
+}
+
+.wrapper .spacer {
+	font-size:12px;
+}
+
+.wrapper .spacer2 {
+	font-size:2px;
+}
+/*End of Section and questionnavigation*/
+
+
+/*################# Comfirmpage ###############################*/
+#idPanelConfirmation .questionTitle {
+	margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom:60px;
+}
+
+#idPanelConfirmation #idUnansweredInfo {
+	width:500px;
+	margin-left:20px;
+	/*padding:15px;*/
+}
+
+#idPanelConfirmation #idButtonReviewUnanswered {
+	margin-bottom:20px;
+	margin-top:20px;
+	width:300px;
+	height:27px;
+	text-align:left;
+	padding-left:30px;
+}
+
+#idPanelConfirmation .buttons .QTI2Btn {
+/*  height: 27px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding-left: 7px;
+  text-align: center;
+  width: 220px;*/
+
+    background-color: #B9BABC;
+    box-shadow: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.25s ease 0s;
+    height: auto;
+    width: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 7px 6px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: Open Sans;
+     float:left;
+
+}
+
+#idPanelConfirmation .unansweredQuestionsWrapper .unansweredQuestion .sectionName {
+	width:230px;
+	float:left;
+    cursor:pointer;
+}	
+
+#idPanelConfirmation .unansweredQuestionsWrapper .unansweredQuestion .questionName {
+    display: inline;
+    cursor:pointer;
+}	
+
+#idPanelConfirmation .prompt {
+    width: 320px;
+    display: inline;
+    float: left;
+    margin: 70px 0 0 20px;
+}
+
+#idPanelConfirmation .buttons {
+    display: inline;
+    float: left;
+    width: 500px;
+    clear: both;
+    margin: 0px 0 0 20px;
+}
+
+#idPanelConfirmation #idUnansweredInfo {
+	float:left;
+}
+
+.panelConfirmation.loading div {
+	display:none;
+}
+
+.noUnanswered .unansweredQuestions, .noUnanswered .unanswered {
+	display:none;
+}
+
+.hasUnanswered .noUnanswered {
+	display:none;
+}
+/*## END OF CONFIRMPAGE  ##*/
+
+/* ###################Summarypage #########################*/
+#summaryPage .questionTitle {
+	margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom:0px;
+}
+
+#summaryPage #closeBtn {
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    background-color: #1ABC9C;
+    box-shadow: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.25s ease 0s;
+    height: auto;
+    width: 150px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 7px 6px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: Open Sans;
+}
+
+.panelSummary.loading div {
+	display:none;
+}
+/*End of summarypage*/
+
+/*multiple examination panel*/
+.panelMultipleExamination{
+   width:100%;
+}
+
+.panelMultipleExamination.saving .content{
+    opacity:0.5;
+    filter: alpha(opacity = 50);
+}
+
+.panelMultipleExamination .content{
+   width:100%;
+   overflow:auto;
+   height:500px;
+}
+
+.panelMultipleExamination .studentQuestionInfo{
+   width:95%;
+   overflow:auto;
+   float:left;
+   border: solid 1px black;
+   margin-bottom:10px;
+}
+
+.panelMultipleExamination .studentQuestionInfo.error,   /*specifying this item failed*/
+.panelMultipleExamination.savingFailed .studentQuestionInfo /*when all items failed*/
+{
+   border: solid 1px red;
+}
+
+
+.studentQuestionInfo .student{
+   width:20%;
+}
+
+.studentQuestionInfo .answer{
+   width:48%;
+   border-left: solid 1px black;
+   border-right: solid 1px black;
+}
+
+.studentQuestionInfo .feedback{
+   width:31%;
+}
+
+.studentQuestionInfo .student,
+.studentQuestionInfo .answer,
+.studentQuestionInfo .feedback{
+    float:left;
+    padding-top: 15px;
+    overflow:auto;
+}
+/*Added since IE doesn't support min-height*/
+.studentQuestionInfo .answer .hack_minHeight{
+   width:1px;
+   height:80px;
+   float:left;
+}
+
+.studentQuestionInfo .student,
+.studentQuestionInfo .feedback{
+    text-align:center;
+}
+.studentQuestionInfo .answerSection{
+    margin:10px;
+    float:left;
+}
+
+.studentQuestionInfo .studentSection,
+.studentQuestionInfo .feedbackSection{
+   display:block;
+}
+
+.studentQuestionInfo.loading *,
+.panelMultipleExamination.loading *{
+   display:none;
+}
+
+.studentQuestionInfo.loading{
+  height:80px;
+}
+
+.studentQuestionInfo .caption{
+  font-weight:bold;
+}
+
+.panelMultipleExamination .itemTitle{
+  margin-bottom:20px;
+}
+
+.panelMultipleExamination .messageSuccess,
+.panelMultipleExamination .messageFailed,
+.panelMultipleExamination .messageSomeFailed,
+.panelMultipleExamination .messageSaving{
+   display:none;
+}
+
+.panelMultipleExamination.savingSuccess .messageSuccess{
+display:block;
+color:green;
+}
+
+.panelMultipleExamination.savingFailed .messageFailed,
+.panelMultipleExamination.savingSomeFailed .messageSomeFailed{
+display:block;
+color:red;
+}
+
+.panelMultipleExamination.saving .messageSaving{
+display:block;
+color:gray;
+}
+
+/*end multiple examination panel*/
+
+
+/*################## HINTS AND SUGGESTEDSOLUTIONS ##############*/
+#hintInformation {
+	display:none;
+}
+
+/*end Hints*/
+
+
+/*########## UNKNOWN - MOVE IF YOU KNOW WHERE IT BELONGS*/
+
+
+/*END OF UNKNOWN*/
+
+
+
+/*############# POPUPS #####################*/
+#idOverlay
+{
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #000;
+  filter: alpha(opacity=15);
+  -moz-opacity: 0.15;
+  opacity: 0.15;
+  z-index: 50;
+
+  /*IE*/  
+  _position: absolute;
+  /*
+  _top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop +(documentElement.clientHeight-this.clientHeight) - 1: document.body.scrollTop+(document.body.clientHeight-this.clientHeight) - 1);
+  _left:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollLeft+(documentElement.clientWidth-this.clientWidth) - 1: document.body.scrollLeft+(document.body.clientWidth-this.clientWidth) - 1);
+  */
+  _top:0;
+  _left:0;
+  _width: 100%;
+  _height: 100%;
+}
+
+.popUp {
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	height:400px;
+	width:506px;
+	
+	z-index:99;
+	text-align: left;
+	overflow: hidden;
+}
+
+* html .popUp {
+	height:480px;
+	width:586px;
+}
+
+.popUp .formField label {
+	width:230px;
+	display:inline;
+	float:left;
+}
+
+.popUp .formField input {
+	margin-bottom:9px;
+}
+
+* html #assessment .popUpWrapper {
+	left: 50%;
+	margin-left: -300px;
+}
+
+.PopUpResume {
+	background-color:#fff;
+	height:336px;
+	width:486px;
+	padding:40px;
+	margin-top:10px;
+}
+
+/*End of POPUPS*/
+
+
+
+/*##### WAITMESSAGES ######*/
+.generalMessageDisplay
+{
+    z-index: 20;
+    top: 30%;
+    left: 38%;
+    position:absolute;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+.waitStoringMessage
+{
+    width:100%;
+    height:100%;
+    background:none repeat scroll 0 0 white;
+    overflow:auto;
+    width:330px;
+}
+.waitStoringMessage .messageContent{
+    margin:20px 10px;
+    float:left;
+    width:200px;
+    text-align: left;
+}
+.waitStoringMessage .waitImage{
+    float:left;
+    height:90px;
+    width:90px;
+    background-image:url("../../gfx/wait.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*END OF WAITMESSAGES*/
+
+
+/*################### NOT YET TESTED/USED (WORK IN PROGRESS) ###################*/
+
+#assessment .popUpWrapper  .formField {
+	width:425px;
+	float:left;
+}
+
+#assessment .popUpWrapper  p {
+	font-size:1.1em;
+}
+
+
+#assessment .popUpWrapper  label {
+	display:inline;
+	float:left;
+	margin-top:5px;
+	width:300px;
+	margin-bottom:10px;
+}
+
+* html #assessment .popUpWrapper  label {
+	width:295px;
+}
+
+#assessment .popUpWrapper  input {
+	width:111px;
+	text-align:center;
+	margin-bottom:10px;
+	width:124px;
+	height:31px;
+	font-size:0.9em;
+	padding-bottom:5px;
+}
+
+/*Oppgavevisning*/
+#answerButtonDiv {
+	float:right;
+}
+
+#summaryPage {
+	float:left;
+	width:100%;
+}
+
+#summaryPage #details {
+	float:left;
+	width:100%;
+	position:relative;
+}
+
+/*Summarypage*/
+* html #summaryPage #details {
+	height:500px;
+}
+
+#summaryPage #details .assessmentEvaluation {
+	margin-top:40px;
+	width:530px;
+	float:left;
+	border-collapse:collapse;
+}
+
+
+#summaryPage .itemTitle{
+	top:0px;
+	position:relative;
+	left:0px;
+}
+
+
+.assessmentEvaluation {
+	width:530px;
+}
+
+.assessmentEvaluation td{
+	padding-left:20px;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+.resultTableHeader {
+	padding-bottom:5px;
+}
+
+.resultimg {
+}
+
+.assessmentEvaluation td.total {
+	padding-right:10px;
+}
+
+.assessmentEvaluation td.totalscore {
+	padding-left:3px;
+	padding-right:10px;
+}
+
+#totalScoreDiv {
+	height:45px;
+	width:320px;
+	float:left;
+	margin-left:5px;
+	margin-top:60px;
+	padding:15px;
+}
+
+* html  #totalScoreDiv {
+	width:350px;
+}
+
+#totalScoreDiv span{
+	margin-top:10px;
+}
+
+
+
+.takeSurveyBtn {	
+	height:27px;
+	padding-right:10px;
+	bottom:70px;
+	right:0px;
+	position:absolute;
+}
+
+
+/*startpage*/
+#startpage {
+	float:left;
+	width:100%;
+}
+
+#startpage #frontpageDocument {
+	margin-top:30px;
+	width:550px;
+	float:left;
+}
+
+#startpage #startbutton {
+	float:left;
+	margin-top:50px;
+	margin-left:50px;
+}
+
+#startpage #startbutton input {
+	width:140px;
+	height:27px;
+	text-align:left;
+	padding-left:10px;
+	padding-bottom:3px;
+}
+
+#itembodyTable {
+	float:left;
+	margin-top:10px;
+	height:385px;
+}
+
+.itemContentWrapper_flash {
+	position:absolute;
+	top:80px;
+}
+
+#waitgfx {
+    position:relative;
+    background-image: url('../../gfx/wait.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:900px;
+    height:450px;
+    margin:0px;
+    padding:0px;
+}
+
+#summaryPage #testdelivered .itemTitle {
+	margin-bottom:10px;
+}
+
+#testdelivered {
+	width:500px;
+}
+
+.fatal {
+	background-color:#fff;
+	position:absolute;
+	top:30%;
+	left:20%;
+	z-index:40;
+	padding:10px;
+	border:#ff0000 solid 4px;
+}
+
+#errorMessageDisplay h1 {
+	font-size:1.2em;
+}
+
+.offerLogout{
+    position: absolute;
+    right: 10px;
+    top: 61px;
+    color:white;
+    font-size:12px;
+}
+
+.offerLogout a:link {color:white;}      /* unvisited link */
+.offerLogout a:visited {color:white;}  /* visited link */
+.offerLogout a:hover {color:red;}  /* mouse over link */
+.offerLogout a:active {color:white;}  /* selected link */
+
+/*################## POPUPS #############################*/
+
+.popUp {
+    font-size:16px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color:#fff;
+    background:url("../../gfx/qti/dialogBackground.gif") no-repeat left top;
+
+    text-align:left;
+}
+
+/*End of popups */

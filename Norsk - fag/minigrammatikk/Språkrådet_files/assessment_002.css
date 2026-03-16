@@ -1,0 +1,483 @@
+﻿body#assessment {
+    margin: 0px;
+    padding: 0px;
+    background-color:transparent;
+
+}
+
+.assessmentDiv {
+    padding: 0px;
+    margin: 0px;
+    box-shadow: none;
+     width:100%;
+   /*background:url('../../gfx/bg.jpg');*/
+    background-color:transparent;
+    padding-top:40px;
+     padding-bottom:30px;
+}
+
+body#assessment > .assessmentDiv {
+	max-width: 950px;
+}
+
+* html .assessmentDiv {
+    width:100%;
+    margin: 0px;
+    padding:0px;
+
+    padding-top:40px;
+     padding-bottom:30px;
+}
+
+.topSection {
+   width:100%;
+   min-height:43px;
+}
+
+.topSection #assessmentName {
+    text-align:center;
+    color:#333333;
+    font-size:25px;
+    width:100%;
+      position:relative;
+    top:0px;
+    left:0px;
+    font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
+}
+
+.topSection #assessmentName span {
+   background-color: #FFFFFF;
+    color: #FFBC51;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right:10px;
+
+}
+
+.bottomSection{
+    float:none;
+    width:auto;
+   /* position:relative;*/
+    margin-top:0px;
+    padding-top:0px;
+    margin-bottom:0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#print {
+	margin-top: 10px;
+}
+
+#generalQuestionFeedback {
+    width:auto;
+    margin-top:0px;
+    padding-top:0px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-top:0px;
+}
+
+.customTrainingAssessment {
+    text-align:center;
+    margin-top:40px;
+}
+
+/* .social-media img {
+	vertical-align: middle;
+	margin-left: 5px;
+} */
+
+#socialMediaContainer{
+	margin-top: 10px;
+	text-align: left;
+	padding-left:30px;
+}
+
+.sectionNavigationComponents {
+	float: none;
+}
+
+.sectionNavigationComponents, #navigationTable {
+	width: 100%;
+}
+
+.sectionNavigationComponents .assess_btnPrev, .sectionNavigationComponents .assess_btnNext, .assess_btnPrev {
+	width: auto;
+	z-index: 0;
+}
+
+#navigationTable .sectionRow {
+    display:none;
+}
+
+#tempScoreDiv {
+
+   display:none;
+
+}
+
+.sprak-btn {
+	display: inline-block;
+	border: 2px solid rgba(243, 167, 0, 1);
+	background: rgba(243, 167, 0, 1);
+	border-radius: 5px;
+	font-size: 1em;
+	margin: 15px 0;
+	padding: 8px 15px 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+.sprak-btn:hover {
+	background: rgb(51,51,51);
+	border: 2px solid rgb(51,51,51);
+	color: rgba(243, 167, 0, 1);
+}
+
+.sprak-btn--prev {
+	float: left;
+}
+
+.sprak-btn .fa {
+	margin: 0 5px;
+}
+
+.sprak-btn--to-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+}
+
+button.QTI2Btn span {
+	position: relative;
+	white-space: nowrap;
+}
+
+.questionRow .wrapper .questionSelector {
+    position:static;
+    text-align:center;
+    font-size:13px;
+
+
+}
+
+.questionRow .wrapper div.questionSelector {
+	height:4px;
+	float: none;
+	left: auto;
+}
+
+.questionRow .wrapper div.questionSelector div {
+     text-align:center;
+
+}
+
+
+
+#qti_assessmentTrackDiv {
+    margin-top:0px;
+}
+
+
+
+
+.showAlways .wrapper .questionSelector div, .current .wrapper .questionSelector div,  .wrapper .questionSelector div {
+ display:inline;
+}
+
+.questionSelector {
+
+}
+
+.questionRow td {
+    height:auto;
+}
+
+.questionRow .wrapper .questionSelector {
+    position:static;
+
+    top:0px;
+}
+
+.wrapper .questionSelector div {
+    float:left;
+      position: relative;
+    left:50%;
+    top:1px;
+    display:block;
+    text-align:center;
+ }
+
+.showAlways .wrapper .questionSelector div {
+    position: relative;
+    top:1px;
+}
+ 
+.current .wrapper .questionSelector div {
+    position: relative;
+    top:0px;
+}
+
+
+.sectionRow {
+    display:none;
+}
+
+.questionRow .wrapper .questionSelector, .current .wrapper .questionSelector {
+    font-size: 14px;
+}
+
+.current .wrapper .questionSelector {
+    font-size:16px;
+}
+
+#qti_assessmentTrackDiv td.finished    {
+    background-color:#686868;
+}
+
+#qti_assessmentTrackDiv td.current {
+    background-color:#EA9E25;
+}
+
+#navigationTable {
+    width:100%;
+	border-spacing: .3em;
+}
+
+#qti_assessmentTrackDiv {
+    margin-top:0px;
+    float:none;
+}
+
+.questionRow .wrapper .questionSelector {
+   text-align:center;
+    top:1px;
+    position:relative;
+    padding-top:0px;
+    padding-bottom:3px;
+}
+
+.hints  {
+    background-color:#fff;
+}
+
+#summaryPage {
+    float:none;
+    display: inline;
+    width:100%;
+
+   
+}
+
+#summaryPage .inatst {
+    border: #ff0000 solid 1px;
+
+}
+
+#summaryPage #details {
+   
+    background-color:#fff;
+    display:table;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+
+
+}
+
+#summaryPage .questionTitle {
+    display:none;
+}
+
+#summaryPage #totalScoreDiv {
+    background-color: transparent;
+
+     color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    float: none;
+    height: auto;
+    width:auto;
+    margin:0px;
+    padding:0px;
+
+}
+
+#summaryPage #totalScoreDiv span {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#summaryPage .assessmentEvaluation {
+    display: none;
+}
+
+
+#summaryPage .feedbackdocument {
+    position: relative;
+    float:left;
+    max-width:55%;
+	padding-left:30px;
+	padding-top: 30px;
+}
+
+#summaryPage #feedbackImage {
+   float:right;
+
+}
+
+#summaryPage .feedbackdocument h1 {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+/*
+* Resultpage
+*/
+#summaryPage #details {
+    padding: 10px;
+}
+
+
+#summaryPage #details #themeTable        {
+    display:table;
+    width:100%;
+    padding: 10px;
+	padding-left:30px;
+}
+
+#summaryPage #details #themeTable .categoryRow {
+    width:100%;
+    display: table-row;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+
+#summaryPage #details #themeTable .cell       {
+    padding-top:3px;
+    padding-bottom:3px;
+    display:table-cell;
+    width:33%;
+}
+
+#summaryPage #details #themeTable .theme       {
+   font-weight: bold;
+}
+
+#summaryPage #details #themeTable .percentText       {
+   text-align:center;
+}
+
+
+#summaryPage #details #themeTable .percentView       {
+
+   background-color:#ccc;
+}
+
+#summaryPage #details #themeTable .percentView .percent       {
+   height:10px;
+   background-color:#ff9900;
+}
+
+
+
+
+/* end of resultpage*/
+
+/*#### Minigrammar - flip ###########*/
+#idPanelMinigrammar .contentDocument {
+    padding: 10px;
+    padding-left:30px;
+}
+
+.grammarButton  {
+    position:absolute;
+    right:-2px;
+    top:-2px;
+	font-size: 1.2em;
+	padding: 12px 15px;
+}
+
+.grammarButton .helpIcon  {
+    background: url(../../gfx/help_bouble.png);
+    height: 45px;
+    left: 39px;
+    position: absolute;
+    top: -6px;
+    width: 77px;
+    z-index:99;
+}
+
+.grammarButton input, .grammarButton button {
+	border: none;
+	width: auto;
+    height:42px;
+    background: none;
+    font-size: 1em;
+}
+
+.grammarButton button .fa {
+	margin-right: 5px;
+}
+
+.grammarButton input:hover {
+	text-decoration: underline;
+}
+
+.grammarButton input.back {
+    background: transparent;
+    width: auto;
+}
+
+.questions_feedback .grammarButton{
+    display:none;
+}
+/*minigrammar flip*/
+
+
+/**FEEDBACK PANEL***/
+
+/*removing default loading image in this panel so that loading
+is delegated to each loading inner feedback question instead*/
+.panelFeedback.loading{
+   float:none;
+   height:auto;
+   width:auto;
+   background:none;
+}
+
+.question_feedback.loading{
+  width:400px;
+  height:200px;
+  float:none;
+  display:inline-block;
+}
+
+/*TESTC-451 hiding the confirmation panel*/
+#idPanelConfirmation, #idPanelConfirmation .questionTitle, #idPanelConfirmation #idUnansweredInfo, #idPanelConfirmation .prompt, #idPanelConfirmation .buttons {
+	display: none;
+}
+
+.item {
+    width: 100% ! important;
+}
+
+.item:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.topSection .settings {
+    display: none;
+}

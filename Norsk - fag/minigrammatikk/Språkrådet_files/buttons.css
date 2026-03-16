@@ -1,0 +1,76 @@
+
+/************************************************************************************
+	General button styles with css3
+*************************************************************************************/
+
+/* Global button */
+.button {
+	display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    text-shadow: 0 -1px 1px rgba(0,0,0,.3);
+	cursor: pointer;
+}
+
+/* Button size */
+.small, .normal, .medium, .big, .megabig, .rounded-corner {
+    -webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+    padding: 3px 10px;
+}
+.small {
+    font-size: 17px;
+}
+.normal {
+    font-size: 19px;
+}
+.medium {
+    font-size: 21px;
+}
+.big {
+    font-size: 27px;
+}
+.megabig {
+    font-size: 35px;
+}
+
+/* Passive blue button */
+.blue {
+    background-color: #52A8E8;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377AD0), to(#52A8E8));	/* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(0% 100% 90deg, #377AD0, #52A8E8); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(0% 100% 90deg, #377AD0, #52A8E8); /* FF3.6+ */
+    background-image:     -ms-linear-gradient(0% 100% 90deg, #377AD0, #52A8E8); /* IE10 */
+    background-image:      -o-linear-gradient(0% 100% 90deg, #377AD0, #52A8E8); /* Opera 11.10+ */
+    background-image:        -linear-gradient(0% 100% 90deg, #377AD0, #52A8E8); /* W3C */
+    border: 1px solid #20559A;
+	color: white;
+}
+/* Hovered blue button */
+.blue:hover, .blue:focus {
+    background-color: #54A1D8;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1967CA), to(#54A1D8)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(0% 100% 90deg, #1967CA, #54A1D8); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(0% 100% 90deg, #1967CA, #54A1D8); /* FF3.6+ */
+    background-image:     -ms-linear-gradient(0% 100% 90deg, #1967CA, #54A1D8); /* IE10 */
+    background-image:      -o-linear-gradient(0% 100% 90deg, #1967CA, #54A1D8); /* Opera 11.10+ */
+    background-image:        -linear-gradient(0% 100% 90deg, #1967CA, #54A1D8); /* W3C */
+    color: white;
+}
+/* Active blue button */
+.blue:active {
+    background: #2D7CD1;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+

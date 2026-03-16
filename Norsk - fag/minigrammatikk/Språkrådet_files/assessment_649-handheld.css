@@ -1,0 +1,82 @@
+/************************************************************************************
+smaller than 650 and on handheld devices that has a pixel ratio of 2 (two physical pixels per measurement pixel)
+*************************************************************************************/
+
+/*
+* Oppgavevisning
+*/
+
+#summaryPage #details {
+    text-align: center;
+}
+
+#generalQuestionFeedback .feedbackIllustration {
+    width:auto;
+    text-align:center;
+}
+
+#summaryPage #feedbackImage {
+    display:inline;
+    float:none;
+}
+
+
+#generalQuestionFeedback .feedbackIllustration img, #summaryPage #feedbackImage {
+    width:106px;
+}
+
+#generalQuestionFeedback .feedbackdocument, #summaryPage .feedbackdocument  {
+    width:auto;
+    text-align: left;
+	max-width:100%;
+	padding-left:0px;
+}
+
+#generalQuestionFeedback .extra {
+    width:auto;
+    font-size:12px;
+
+}
+
+#summaryPage #details #themeTable {
+    padding-left:0px;
+    padding-right:0px;
+    text-align:left;
+}
+
+.assessmentDiv .front, .assessmentDiv .bottomSection, .assessmentDiv #generalQuestionFeedback {
+	margin: 0;
+}
+
+#qti_assessmentTrackDiv {
+	margin-top: 41px;
+}
+
+.front {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#socialMediaContainer{
+	padding-left:0px;
+}
+
+#print{
+	display:none;
+}
+
+.assessmentDiv {
+text-align: left;
+}
+
+/*for question.css*/
+.front .itemContent{
+	margin-left:20px;
+	margin-right:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.front .itemTitle, .itemTitle a, .questionTitle{
+	padding-left:20px;
+}

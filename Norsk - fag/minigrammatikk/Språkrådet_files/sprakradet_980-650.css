@@ -1,0 +1,115 @@
+/************************************************************************************
+	Better image resolutions on minimum mid pixel ratio
+*************************************************************************************/
+@media screen and (-webkit-min-device-pixel-ratio:1.5) {
+
+#logo a, #slide-menu li a, #topmenu #slide-button a {
+	background-image: url("../gfx/sprite_hi-res_01.png");
+	background-repeat: no-repeat;
+	background-size: 420px 1500px;
+	-webkit-background-size: 420px 1500px;
+	display: block;
+}
+
+}
+
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+
+
+#inner, #topmenu #header-inner, #topmenu #slide-menu {
+	width: 100%;
+}
+#topmenu #slide-menu ul li{
+	width: 25%;
+}
+
+.box {
+	float: none;
+}
+
+#bottom-boxes .box {
+	height: auto;
+	width: 100%;
+}
+#bottom-boxes .img-wrapper {
+	background: url("../gfx/meister_130.png") center center no-repeat;
+	height: 130px;
+	width: 160px;	
+/*
+	float: right;
+	overflow: hidden;
+	*/
+	position: absolute;
+	right: 30px;
+	bottom: 3px;
+}
+#bottom-boxes .img-wrapper img {
+}
+#bottom-boxes .box.first .button-wrapper {
+	margin-left: 20px;
+	text-align: left;
+	position: static;
+	margin-bottom: 10px;
+}
+
+#bottom-boxes #ta-test h2 {
+	margin: 20px;
+}
+
+#bottom-boxes .box.last select {
+	width: 100%;
+}
+#bottom-boxes .box.last .button-wrapper {
+	text-align: right;
+}
+
+#bottom-boxes #ovingsrekkjer ul {
+}
+
+#bottom-boxes .box li {
+	width: 50%;
+	float: left;
+}
+
+#bottom-boxes #start-oving .box-content > div {
+	float: left;
+	width: 30%;
+	margin-right: 30px;
+}
+
+.lifted-corners:before, .lifted-corners:after {
+	bottom:10px;
+	left:10px;
+	width:49%;
+	height:20%;
+	-webkit-transform:rotate(-2deg);
+	-moz-transform:rotate(-2deg);
+	-ms-transform:rotate(-2deg);
+	-o-transform:rotate(-2deg);
+	transform:rotate(-2deg);
+}
+ 
+.lifted-corners:after {
+	right:10px;
+	left:auto;
+	-webkit-transform:rotate(2deg);
+	-moz-transform:rotate(2deg);
+	-ms-transform:rotate(2deg);
+	-o-transform:rotate(2deg);
+	transform:rotate(2deg);
+}
+
+#printBtn {
+	display: none;
+}
+
+
+}
+
+
+
+
+

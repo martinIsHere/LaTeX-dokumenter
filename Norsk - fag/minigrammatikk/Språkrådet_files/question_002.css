@@ -1,0 +1,303 @@
+.itemContent  {
+      float:none;
+      width:auto;
+    margin-left: 30px;
+    margin-right: 30px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.front {
+/*
+*/
+    background-color:#fff;
+    border: #ccc solid 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+/*
+*/
+    position: relative;
+
+}
+
+.front:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#minigrammar {
+
+    background-color:#fff;
+     border: #ccc solid 1px;
+    margin-left:165px;
+    margin-right:165px;
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+    position: relative;
+
+}
+
+#showMinigrammar {
+    float:right;
+}
+
+* html .front {
+
+    overflow: hidden;
+}
+
+.item {
+    display:inline;
+
+/*
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    -webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: auto;
+*/
+}
+.item.question_feedback {
+	width: 100%;
+}
+
+
+.interactiveContent {
+    padding: 0px;
+}
+
+.question_short_right .interactiveContent {
+    float: none;
+    overflow: hidden;
+    width: auto;
+}
+
+.itemTitle, .questionTitle  {
+    margin:0px;
+    padding: 0px;
+    width:auto;
+    float:none;
+    padding-left:30px;
+    border-bottom: #ccc solid 1px;
+    padding-bottom:20px;
+    padding-top:20px;
+    font-family: "DIN1451W01-Mittelschrif", "Tahoma", "Arial";
+}
+
+.question_feedback .itemTitle {
+	border: none;
+	border-top: 1px solid #CCCCCC;
+}
+
+#idPanelFeedback .actionButtons {
+/*
+	border-top: 1px solid #CCCCCC;
+*/
+}
+#idPanelFeedback button.close {
+	margin: 30px;
+}
+
+.interactiveContent {
+    background-color:#fff;
+}
+
+
+/**#### CLEAN TEMPLATE #######*/
+
+.question_clean .itemIllustration {
+	display:none;
+}
+
+.interactiveContent {
+    width:100%;
+}
+
+.wrapperToCenterVertically {
+    width:100%;
+}
+
+
+/* End of clean template  */
+.choiceInteraction a.current, .choiceInteraction a:hover.current, .choiceInteraction a:hover {
+    background-color:#DFDFDF;
+}
+
+.item .choiceInteraction a.current td {
+    color:#000;
+}
+
+
+
+#feedbackBlock {
+    display:none;
+    float:none;
+    width:auto;
+    clear:both;
+    border:2px dotted #CCCCCC;
+    background-color:#fff;
+  /*  border: #ff0000 solid 1px;
+    width:auto;
+
+    margin-top:0px;
+    padding-top:0px;
+    float:none;*/
+}
+
+#feedbackBlock blockquote {
+  /*  width: 100%;
+    border: #00ff00 solid 1px;*/
+}
+
+
+#generalQuestionFeedback {
+    background-color:#fff;
+}
+
+#generalQuestionFeedback .feedbackIllustration {
+    width:33%;
+    float:left;
+    font-size:18px;
+    font-weight:normal;
+     padding:10px;
+    overflow: hidden;
+    font-family: "DIN1451W01-Mittelschrif", "Tahoma", "Arial";
+}
+
+#generalQuestionFeedback .feedbackdocument {
+    width:32%;
+    padding:10px;
+    padding-top:10px;
+    float:left;
+    text-align:left;
+}
+
+#generalQuestionFeedback .feedbackdocument h1 {
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    font-family: "DIN1451W01-Mittelschrif", "Tahoma", "Arial";
+}
+
+#generalQuestionFeedback .extra {
+    width:25%;
+    float:left;
+    text-align:left;
+    padding:10px;
+}
+
+#generalQuestionFeedback .related_questions h3, #generalQuestionFeedback .averageScore h3{
+     font-size:18px;
+    font-weight:normal;
+     margin-top:0px;
+    font-family: "DIN1451W01-Mittelschrif", "Tahoma", "Arial";
+    margin-bottom:10px;
+}
+
+/*SPRN-8*/
+/*#generalQuestionFeedback .extra .averageScore  {
+    display:none;
+}*/
+
+.questions_feedback .hints, .questions_feedback .showSolutionLinks {
+	display: none;
+}
+
+
+
+.related_questions .related_question{
+ cursor:pointer;
+ text-decoration: none;
+color: #003888;
+}
+
+.related_questions .related_question:hover{
+ text-decoration: underline;
+}
+
+  .choiceInteraction a table td.answerWrong_multiple_choice {
+     background:none;
+ }
+
+ .choiceInteraction a table td.answerCorrect_multiple_choice {
+     background:url('../../gfx/assessment/answerCorrect_multiple_choice.png') no-repeat;
+ }
+
+  .choiceInteraction a table td.answerCorrect_multiple_response {
+     background:url('../../gfx/assessment/answerCorrect_multiple_response.png') no-repeat;
+ }
+
+  .choiceInteraction a table td.answerWrong_multiple_response {
+     background:none;
+ }
+
+/*
+	Minigrammar
+*/
+
+#idPanelMinigrammar .contentDocument table {
+    background-color:#E6E5E5;
+}
+
+#idPanelMinigrammar .contentDocument {
+    background-color:#fff;
+    padding:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#idPanelMinigrammar .contentDocument ul {
+    list-style: disc;
+    padding-left:40px;
+    margin-top:16px;
+    margin-bottom:16px;
+}
+
+#idPanelMinigrammar .contentDocument h1 {
+    font-size:24px;
+}
+
+#idPanelMinigrammar .contentDocument h2 {
+    font-size:22px;
+}
+
+#idPanelMinigrammar .contentDocument h3 {
+    font-size:20px;
+}
+
+#idPanelMinigrammar .contentDocument h4 {
+    font-size:18px;
+}
+
+#idPanelMinigrammar .contentDocument .framheving {
+    color:#E29000;
+    font-weight:bold;
+}
+
+#idPanelMinigrammar .contentDocument table {
+    border: #fff solid 1px;
+    border-collapse:collapse;
+}
+
+#idPanelMinigrammar .contentDocument table td {
+    border: #fff solid 1px;
+}
+
+
+
+

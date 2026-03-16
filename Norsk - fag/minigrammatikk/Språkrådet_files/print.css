@@ -1,0 +1,30 @@
+﻿/************************************************************************************
+	Print question style
+*************************************************************************************/
+html {
+	background: #FFF;
+}
+body {
+	background: #FFF;
+	font-size: 12px;
+}
+
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#topmenu, .sectionNavigationComponents, .customTrainingAssessment {
+	display: none;
+}
+
+.front .button, #print {
+	display: none;
+}
+
+.front {
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+}

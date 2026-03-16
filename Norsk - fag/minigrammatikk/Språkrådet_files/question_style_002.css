@@ -1,0 +1,374 @@
+/*
+	$Id$
+*/
+/*CSS - font-size, font-weight, colors etc....margins and paddings can be found in question.css */
+
+/*####################################################*/
+/*## Here you will find:															*/
+/*##  - General stuff																	*/
+/*## 	- Drag and drop elements												*/
+/*## 	- Feedback																			*/	
+/*##  - Choiceinteraction  														*/
+/*##  - Clikc word										 								*/
+/*##  - hints and suggested solutions									*/
+/*##  - Question inline																*/
+/*##  - Ordering                											*/
+/*##  - 					               											*/
+/*##  - 							          											*/
+/*##  - 								        											*/
+/*##  - 											  											*/
+/*####################################################*/
+
+
+/*################## General #########################*/
+
+
+body, table, input {
+	font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal; 
+	font-size:15px;
+	color:#333333;
+} 
+
+.itemTitle , .itemTitle a, .questionTitle {
+	font-size:26px;
+	color:#333333;
+}
+
+#MathBgColor {
+	color:#fff;
+}
+
+.item a {
+	text-decoration:none;
+}
+
+.backgroundColor {
+	background-color:#FFFFFF;
+}
+
+
+.interactiveContent {
+	background-color:#CCDEEF;
+}
+
+.bottomBar {
+	font-size:12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.qti2QuestionPrompt, .bodyMC_inline .qti2QuestionPrompt {
+	font-weight:bold;
+}
+
+.item #resetBtnDiv input.resetButton {
+	background-color:#908F94;
+	font-size:13px;
+	font-weight:bold;
+	color:#fff;
+	border:#fff solid 1px;
+	text-align:left;
+}
+
+#resetBtnDiv {
+	padding-top:8px;
+	float:left;
+}
+
+.submitButtonWrapper {
+	clear: both;
+}
+
+/* End of general*/
+
+
+/*################## Drag and drop elements ############ */
+#dragBGColor {
+	color:#9BBDDC;
+}	
+
+#draggedBGColor {
+	color:#7AA1C5;
+}
+
+#overBGColor {
+	color:#9BBDDC;
+}
+
+/* End of drag and drop elements*/
+
+
+/*################## Feedback ############ */
+
+td.correct,#content span.correct {
+	color:#08A200;
+	font-size:12px;
+}
+
+td.wrong, #content span.wrong {
+	color:#FF0000;
+	font-size:12px;
+}
+
+.questionFeedback {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:12px;
+}
+
+#feedbackBlock {
+	background-color:#CCDEEF;
+}
+
+.studentEssayAnswer {
+    border-top: #999 solid 1px;
+    border-bottom: #999 solid 1px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* End of feedback*/
+
+
+/*###### Choiceinteraction ####*/
+.choiceInteraction a {
+	text-decoration:none;
+}
+
+.choiceInteraction a:hover {
+	background-color:#9BBDDC;
+}
+
+.choiceInteraction a.current {
+	background-color:#7AA1C5;
+}
+
+.choiceInteraction a.current:hover {
+	background-color:#7AA1C5;
+}
+
+.item  .choiceInteraction a td {
+	font-weight: normal;
+	color:#333333;
+}
+
+.item  .choiceInteraction a.current td{
+	color:#ffffff;
+	font-weight:bold;
+}
+/* End of choiceinteraction*/
+
+
+
+/*##### Clikc word ###############*/
+.clickword a {
+	background-color:#CCDEEF;
+	color:#000;
+}
+
+.clickword .itemTitle a {
+	background-color:#fff;
+	color:#000;
+}
+
+.clickword a:hover {
+	background-color:#9BBDDC;
+}
+
+.clickword a.current {
+	background-color:#7AA1C5; 
+	color:#ffffff;
+	font-weight:bold;
+}
+
+
+.clickword a.current:hover {
+	background-color:#7AA1C5;
+}
+
+.clickword .yourAnswer {
+	background-color:#7AA1C5;
+	font-weight:bold;
+	color:#FFF;
+	width:200px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+}
+
+/*End of click word*/
+
+
+/*############## hints and suggested solutions ##############*/
+
+
+.item .showSolutionLinks a {
+	/*color:#000;
+	font-weight:normal;
+	font-size:12px;
+	text-decoration:underline;    */
+}
+
+.qti21Solution {
+	border:#000 solid 1px;
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+}
+
+ #hintInformation {
+	background-color:#DEE7D6;
+}
+
+/*End of hints and suggested solutions*/
+
+/*####################### question inline #########################*/
+.question_inline .choiceInteraction a {
+	border:transparent solid 8px;
+	background-color:transparent;
+}
+
+.question_inline .choiceInteraction a td.answerContent div.inlineImage {
+	background-color:transparent;
+ 	min-height: 1px;
+	min-width: 1px;
+}	
+
+*html .question_inline .choiceInteraction a td.answerContent div.inlineImage {
+	height: 0px;
+}
+
+.question_inline .choiceInteraction a td.answerContent div {
+	background-color:#fff;
+	border:#fff solid 3px;
+	border-bottom:#908F94 solid 3px;
+	border-right:#908F94 solid 3px;
+	color:#000;
+}	
+
+.question_inline .choiceInteraction a:hover {
+	border:#9BBDDC solid 8px;
+	background-color:transparent;
+}
+
+.question_inline .choiceInteraction a.current, .question_inline .choiceInteraction a.current:hover {
+	border:#7AA1C5 solid 8px;
+	background-color:transparent;
+}
+
+.question_inline .choiceInteraction a table td.feedbackLine{
+	border:#cccccc dotted 8px;
+	background-color:transparent;
+}
+
+.question_inline .choiceInteraction a.wrong,  .question_inline .feedback .choiceInteraction a.wrong:hover {
+	border:#ff0000 solid 8px;
+	background-color:transparent;
+}
+
+.question_inline .choiceInteraction a.correct, .question_inline .feedback .choiceInteraction a.correct:hover {
+	border:#00ff00 solid 8px;
+	background-color:transparent;
+}
+
+.question_inline .feedback .choiceInteraction a:hover {
+	border:transparent solid 8px;
+}
+
+/* End of inline questions*/
+
+/*########### Ordering #############*/
+
+.orderingList li.incorrect {
+	border:#ff0000 solid 8px;
+}
+
+.orderingList li.correct {
+	border:#00ff00 solid 8px;
+}
+/* End of ordering */
+
+
+/*############### InlineBox #################*/
+.inlineBox .interactiveContent {
+    background:#fff;
+}
+
+.inlineBox .inlineBoxText {
+    background-color:#CCDEEF;
+}
+
+.inlineBox .inlineBoxContent {
+    border: 1px solid #CCCCCC;
+}
+
+.question_inline.inlineBox .choiceInteraction a {
+    border: 8px solid #fff;
+}
+
+/*End of inlineBox*/
+ /*to center vertically
+form{
+display:table;
+_position:relative;
+}
+.wrapperToCenterVertically2, .itemIllustration{
+   display:table-cell;
+   float:none;
+   vertical-align:middle;
+   _position:absolute;
+   _top:50%;
+}
+
+.wrapperToCenterVertically2 .interactiveContent,.itemIllustration .illustrationMaterial{
+  _position:relative;
+  _top:-50%;
+}
+*/
+
+.correct {
+    color: #16af13;
+}
+
+.wrong {
+    color: #ff4d46;
+}
+
+
+
+/* JS MODULES */
+
+
+/* JS MODULE drag and drop */
+
+.graphicGapMatchInteraction .canvas .showDrop .dropContents {
+    background-color: #f8ff00;
+    opacity: 0.7;
+}
+
+.graphicGapMatchInteraction .canvas .gapCorrect {
+    border: #16af13 dashed 4px;
+    overflow: hidden;
+}
+
+.graphicGapMatchInteraction .canvas .gapWrong {
+    border: #ff4d46 dashed 4px;
+    overflow: hidden;
+}
+
+
+/* END JS MODULE drag and drop */
+
+/* JS MODULE hotspot */
+.hotspotInteraction .canvas .hotspotCorrect {
+    border: #16af13 dashed 4px;
+}
+
+.hotspotInteraction .canvas .hotspotWrong {
+    border: #ff4d46 dashed 4px;
+}
+
+/* END JS MODULE hotspot */
+
+/* END JS MODULES */
