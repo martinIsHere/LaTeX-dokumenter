@@ -1,6 +1,13 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{tkz-euclide}
+\usepackage{pgf}
+\usepackage{xcolor}
+\usepackage{amsfonts}
+\usepackage{graphicx}
 \numberwithin{equation}{section}
 \title{Fysikk}
 \author{Martin N. Håvardsen}
@@ -31,13 +38,37 @@ Merk at i likning \textbf{1.6} er $u=\displaystyle\int vdv$, og $C_1$ kan ignore
 
 \section{Distanse mellomg punkt og plan}\label{sec:Distanse mellomg punkt og plan} % (fold)
 
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=2.5, every node/.style={inner sep=0pt}]
+  % Left picture
+  \begin{scope}[shift={(0,0)}]
+    % grid
+    %\draw[step=0.5cm,gray,very thin] (-0.5,-0.5) grid (1.5,1.5);
+    % plane
+    \draw[thick, red] (-0.5,0) -- (1.5,0.0) node [below right=0.1] {$\alpha$};
+    % normal vector
+    \draw[thick,->, green] (0,0) -- (0,0.5) node[above left=0.1] {$\bold{n}$};
+    % points
+    \filldraw[black] (0,0) circle (1pt) node [above left=0.1] {$Q$};
+    \filldraw[black] (1,1) circle (1pt) node [above left=0.1] {$P$};
+    \filldraw[black] (1,0) circle (1pt) node [above right=0.1] {$N$};
+    % triangle edges
+    \draw[thick, blue, dashed] (0,-0.1) -- (1.0,-0.1) node [pos=0.5, below right=0.1] {$L$};
+    \draw[thick, blue, dashed] (1,0) -- (1.0,1.0) node [pos=0.7, below right=0.1] {$D$};
+    \draw[thick, green, ->] (0,0) -- (1,1) node[pos=0.5, above=0.1] {$\overrightarrow{QP}$};
+  \end{scope}
+\end{tikzpicture}
+  \caption{Plan og punkt}
+\end{figure}
+
 Vi har et plan git ved
 \begin{equation}
   \alpha : \bold { n }\cdot(\overrightarrow{QX}) = 0
   \label{eq:alfa plan}
 \end{equation}
 der $Q$ er et punkt i planet $\alpha$ og $\bold {n}$, normalvektoren til planet. $P$ er et punkt  med distanse $D$ fra planet $\alpha$. 
-lengden $L$ er lengden langs plan $\alpha$ til punktet $N=P_{proj}$ der $\overrightarrow{PP_{proj}} \parallel \bold n$. La $\bold{v}=\overrightarrow{QP}\times\overrightarrow{NP}$
+Lengden $L$ er lengden langs plan $\alpha$ til punktet $N=P_{proj}$ der $\overrightarrow{PP_{proj}} \parallel \bold n$. La $\bold{v}=\overrightarrow{QP}\times\overrightarrow{NP}$
 \begin{equation}
   L\triangleq\frac{|\overrightarrow{QP}\times\overrightarrow{NP}|}{|\overrightarrow{QP}|}
   \label{eq:L}
@@ -125,6 +156,12 @@ med substitusjon
   }
   \label{eq:D 3}
 \end{equation}
+
+Vi tar føre oss skalarproduktet mellom $\overrightarrow{QP}$ og $\bold{n}$
+\begin{align}
+  |\overrightarrow{QP}\cdot\bold{n}|&=\Big{|}\;|\overrightarrow{QP}|\;|\bold{n}|\cos{\theta}\;\Big{|} \\
+  &=|\overrightarrow{QP}|\;|\bold{n}|\;\big|\sin\left({\theta+\frac{\pi}{2}}\right)\big|
+\end{align}
 % section Distanse mellomg punkt og plan (end)
 
 \end{document}
