@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \numberwithin{equation}{section}
 \title{Fysikk}
 \author{Martin N. Håvardsen}
@@ -30,6 +31,100 @@ Merk at i likning \textbf{1.6} er $u=\displaystyle\int vdv$, og $C_1$ kan ignore
 
 \section{Distanse mellomg punkt og plan}\label{sec:Distanse mellomg punkt og plan} % (fold)
 
+Vi har et plan git ved
+\begin{equation}
+  \alpha : \bold { n }\cdot(\overrightarrow{QX}) = 0
+  \label{eq:alfa plan}
+\end{equation}
+der $Q$ er et punkt i planet $\alpha$ og $\bold {n}$, normalvektoren til planet. $P$ er et punkt  med distanse $D$ fra planet $\alpha$. 
+lengden $L$ er lengden langs plan $\alpha$ til punktet $N=P_{proj}$ der $\overrightarrow{PP_{proj}} \parallel \bold n$. La $\bold{v}=\overrightarrow{QP}\times\overrightarrow{NP}$
+\begin{equation}
+  L\triangleq\frac{|\overrightarrow{QP}\times\overrightarrow{NP}|}{|\overrightarrow{QP}|}
+  \label{eq:L}
+\end{equation}
+Siden $\overrightarrow{QP}\perp\overrightarrow{QP_{proj}}$ har vi at
+\begin{equation}
+  D^2+L^2=|\overrightarrow{QP}|^2
+  \label{eq:D 1}
+\end{equation}
+med substitusjon
+\begin{equation}
+  D=\displaystyle\frac{\sqrt{|\overrightarrow{QP}|^2 - |\overrightarrow{QP}\times\overrightarrow{NP}|^2}}{|\overrightarrow{QP}|}
+  \label{eq:D 2}
+\end{equation}
+
+\begin{equation}
+  D=\displaystyle\frac{\sqrt{|\overrightarrow{QP}|^2 - |\overrightarrow{QP}\times\overrightarrow{NP}|^2}}{|\overrightarrow{QP}|}
+  \label{eq:exapnded D 1}
+\end{equation}
+
+\begin{align}
+  \bold{v} = \overrightarrow{QP}\times\overrightarrow{NP}
+  &=
+  \det\begin{bmatrix}
+    \bold{j} & \bold{i} & \bold{k} \\
+    &\overrightarrow{QP}^T&\\
+    &\overrightarrow{NP}^T&\\
+  \end{bmatrix}
+  \\
+  &=
+  \det\begin{bmatrix}
+    \bold{j} & \bold{i} & \bold{k} \\
+    QP_x&QP_y&QP_z\\
+    NP_x&NP_y&NP_z\\
+  \end{bmatrix}
+  \\
+  &=
+    \bold{j}(QP_{y} \; QN_{z} - QP_{z} \; QN_{y})\\
+    &\quad+\bold{i}(QP_{z} \; QN_{x} - QP_{x} \; QN_{z})\\
+    &\quad+\bold{k}(QP_{x} \; QN_{y} - QP_{y} \; QN_{x}) 
+  \\
+  &=
+  \begin{bmatrix}
+    QP_{y} \; QN_{z} - QP_{z} \; QN_{y}\\
+    QP_{z} \; QN_{x} - QP_{x} \; QN_{z}\\
+    QP_{x} \; QN_{y} - QP_{y} \; QN_{x} 
+  \end{bmatrix}
+  \label{eq:crossprod}
+\end{align}
+
+Vi finner magnituden til $\bold {v} = \overrightarrow{QP}\times\overrightarrow{NP}$
+\begin{align}
+  |\overrightarrow{QP}\times\overrightarrow{NP}|^2&=
+    \quad(QP_{y} \; QN_{z} - QP_{z} \; QN_{y})^2\\
+    &\quad +(QP_{z} \; QN_{x} - QP_{x} \; QN_{z})^2\\
+    &\quad +(QP_{x} \; QN_{y} - QP_{y} \; QN_{x})^2\\
+    &= 
+    v_x^2+v_y^2+v_z^2
+\end{align}
+Vi finner magnituden til $\overrightarrow{QP}$
+\begin{align}
+  |\overrightarrow{QP}|^2=
+    QP_{x}^2
+    +QP_{y}^2
+    +QP_{z}^2
+\end{align}
+
+med substitusjon
+
+\begin{equation}
+  D=\displaystyle\sqrt{\frac
+  {
+    QP_{x}^2
+    +QP_{y}^2
+    +QP_{z}^2
+  - (
+  v_x^2+v_y^2+v_z^2
+  )
+  }
+  {
+    QP_{x}^2
+    +QP_{y}^2
+    +QP_{z}^2
+  }
+  }
+  \label{eq:D 3}
+\end{equation}
 % section Distanse mellomg punkt og plan (end)
 
 \end{document}
